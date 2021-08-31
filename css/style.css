@@ -11,7 +11,54 @@
     font-style: italic;
 }
 
-*
+body
 {
     font-family: "raleway","raleway-italic";
+    background-color: #F2F2F2;
+    --blue-color: #0065FC;
+    --light-blue-color: #DEEBFF;
 }
+
+#bloc_page{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+header nav li{
+    margin-right: 10px;
+}
+header nav a{
+    font-size: 1.3em;    
+    color: black;
+    text-decoration: none;
+
+}
+header nav a:hover{
+    color: var(--blue-color);
+    border-top: var(--blue-color) solid;
+}
+
+#signin{    
+    color: var(--blue-color);
+}
+
+

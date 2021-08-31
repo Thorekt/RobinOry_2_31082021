@@ -14,16 +14,19 @@
         <title>Reservia</title>
     </head>
     <body>
+
         <div id="bloc_page">
 
             <!--page header-->
             <header>
-                <img src="res/images/logo/Reservia.svg"/>
+                <img id="logo" src="res/images/logo/Reservia.svg"/>
                 <!--nav-->
                 <nav>
-                    <a href="#bloc_hebergements">Hébergements</a>
-                    <a href="#bloc_activite">Activités</a>
-                    <a>S'inscrire</a>
+                    <ul>
+                        <li><a href="#bloc_hebergements">Hébergements</a></li>
+                        <li><a href="#bloc_activite">Activités</a></li>
+                        <li><a id="signin">S'inscrire</a></li>
+                    </ul>
                 </nav>
             </header>
 
@@ -132,6 +135,7 @@
                         </div>
                         <div>Afficher plus</div>
                     </section>
+
                     <!--populaire-->
                     <aside id="bloc_populaire">
                         <h1>Les plus populaire</h1>
