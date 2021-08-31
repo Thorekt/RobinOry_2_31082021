@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "raleway";
+    src: url("../res/font/Raleway-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "raleway-italic";
+    src: url("../res/font/Raleway-VariableFont_wght.ttf");
+    font-weight: italic;
+    font-style: italic;
+}
+
+*
+{
+    font-family: "raleway","raleway-italic";
+}
