@@ -56,20 +56,29 @@
             <label>Filtres</label>
             <div id="list_filters">
               <div class="filter">
-                <i class="fas fa-money-bill-wave"></i>Economique
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Economique</span>
               </div>
-              <div class="filter"><i class="fas fa-child"></i>Familial</div>
-              <div class="filter"><i class="fas fa-heart"></i>Romantique</div>
               <div class="filter">
-                <i class="fas fa-dog"></i>Animaux autorisés
+                <i class="fas fa-child"></i>
+                <span>Familial</span>
+              </div>
+              <div class="filter">
+                <i class="fas fa-heart"></i>
+                <span>Romantique</span>
+              </div>
+              <div class="filter">
+                <i class="fas fa-dog"></i>
+                <span>Animaux autorisés</span>
               </div>
             </div>
           </div>
         </form>
-        <h2>
-          <i class="fas fa-info-circle"></i>Plus de 500 logements sont
-          disponibles dans cette ville
-        </h2>
+        <div id="search_information">
+          <i class="fas fa-info"></i>
+          <span>Plus de 500 logements sont
+            disponibles dans cette ville</span>
+        </div>
       </section>
 
       <!--accommodation - populaire-->
@@ -77,7 +86,7 @@
         <!--accommodation-->
         <section id="bloc_accommodations">
           <div class="title_section">
-            <h1>Hébergements à Marseille</h1>
+            <h2>Hébergements à Marseille</h2>
           </div>
           <div id="list_accommodation">
             <div class="bloc accommodation">
@@ -87,7 +96,7 @@
               />
               <div class="description">
                 <h3>Auberge la Cannebière</h3>
-                <h4>Nuit à partir de 25€</h4>
+                <span>Nuit à partir de 25€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -105,7 +114,7 @@
               />
               <div class="description">
                 <h3>Hôtel du port</h3>
-                <h4>Nuit à partir de 52€</h4>
+                <span>Nuit à partir de 52€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -123,7 +132,7 @@
               />
               <div class="description">
                 <h3>Hôtel Les mouettes</h3>
-                <h4>Nuit à partir de 76€</h4>
+                <span>Nuit à partir de 76€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -141,7 +150,7 @@
               />
               <div class="description">
                 <h3>Hôtel de la mer</h3>
-                <h4>Nuit à partir de 46€</h4>
+                <span>Nuit à partir de 46€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -159,7 +168,7 @@
               />
               <div class="description">
                 <h3>Auberge Le Panier</h3>
-                <h4>Nuit à partir de 23€</h4>
+                <span>Nuit à partir de 23€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -177,7 +186,7 @@
               />
               <div class="description">
                 <h3>Hôtel chez Amina</h3>
-                <h4>Nuit à partir de 96€</h4>
+                <span>Nuit à partir de 96€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -189,13 +198,13 @@
             </div>
           </div>
 
-          <div>Afficher plus</div>
+          <span id="show_more">Afficher plus</span>
         </section>
 
         <!--populaire-->
-        <aside id="bloc_populaire">
+        <section id="bloc_populaire">
           <div class="title_section">
-            <h1>Les plus populaires</h1>
+            <h2>Les plus populaires</h2>
             <i class="fas fa-chart-line"></i>
           </div>
           <div class="list_populaire">
@@ -206,7 +215,7 @@
               />
               <div class="description">
                 <h3>Hôtel Le soleil du matin</h3>
-                <h4>Nuit à partir de 128€</h4>
+                <span>Nuit à partir de 128€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -224,7 +233,7 @@
               />
               <div class="description">
                 <h3>Au c&#339;ur de l'eau Chambres d'hôtes</h3>
-                <h4>Nuit à partir de 71€</h4>
+                <span>Nuit à partir de 71€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -242,7 +251,7 @@
               />
               <div class="description">
                 <h3>Hôtel Tout bleu et Blanc</h3>
-                <h4>Nuit à partir de 68€</h4>
+                <span>Nuit à partir de 68€</span>
                 <div class="star_score">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -253,13 +262,13 @@
               </div>
             </div>
           </div>
-        </aside>
+        </section>
       </section>
 
       <!--activités-->
       <section id="bloc_activite">
         <div class="title_section">
-          <h1>Activités à Marseille</h1>
+          <h2>Activités à Marseille</h2>
         </div>
         <div id="list_activite">
           <div class="column">
@@ -323,24 +332,26 @@
 
     <!--page footer-->
     <footer>
-      <div>
-        <h1>A propos</h1>
-        <a>Fonctionnement du site</a>
-        <a>Conditions générales de vente</a>
-        <a>Données et confidentialité</a>
-      </div>
+      <section class="footer_content">
+        <div>
+          <h4>A propos</h4>
+          <a>Fonctionnement du site</a>
+          <a>Conditions générales de vente</a>
+          <a>Données et confidentialité</a>
+        </div>
 
-      <div>
-        <h1>Nos hébergements</h1>
-        <a>Charte qualité</a>
-        <a>Soumettre hôtel</a>
-      </div>
+        <div>
+          <h4>Nos hébergements</h4>
+          <a>Charte qualité</a>
+          <a>Soumettre votre hôtel</a>
+        </div>
 
-      <div>
-        <h1>Assistance</h1>
-        <a>Centre d'aide</a>
-        <a>Nous contacter</a>
-      </div>
+        <div>
+          <h4>Assistance</h4>
+          <a>Centre d'aide</a>
+          <a>Nous contacter</a>
+        </div>
+      </section>
     </footer>
   </body>
 </html>
