@@ -39,6 +39,9 @@ header {
   margin-bottom: 3em;
 }
 
+
+
+
 #logo {
   display: flex;
   flex-direction: row;
@@ -290,9 +293,11 @@ img {
 }
 
 .description {
+  position: relative;
   margin: 1em;
   display: flex;
   flex-direction: column;
+  
 }
 
 .description h3 {
@@ -308,15 +313,16 @@ img {
 }
 
 .description .star_score {  
-  position: absolute;  
+  position: absolute; 
   font-size: 1.03em;
 }
 
 .accommodation .description .star_score {
-  padding-top: 5em;  
+  margin-top: 0.4em;
+  bottom: 0;
 }
 .populaire .description .star_score {
-  padding-top: 10.1em;  
+  bottom: 0;
 }
 
 #bloc_accommodations,
@@ -341,7 +347,7 @@ i {
 }
 
 .accommodation .description {
-  max-height: 42%;
+  height: 100%;
 }
 
 .img_accommodation {
