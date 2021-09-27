@@ -22,14 +22,20 @@
   <body id="bloc_page">
     <!--page header-->
     <header>
-      <img id="logo" src="res/images/logo/Reservia.svg" />
+      <div id="logo">
+        <img  src="res/images/logo/Reservia.svg" />
+      </div>
       <!--nav-->
-      <nav>
+      <nav class="primary_nav">
         <ul>
           <li>
             <a class="selected" href="#bloc_accommodations">Hébergements</a>
           </li>
           <li><a href="#bloc_activite">Activités</a></li>
+        </ul>
+      </nav>
+      <nav class="signin_nav">
+        <ul>
           <li><a id="signin">S'inscrire</a></li>
         </ul>
       </nav>
@@ -76,8 +82,7 @@
         </form>
         <div id="search_information">
           <i class="fas fa-info"></i>
-          <span>Plus de 500 logements sont
-            disponibles dans cette ville</span>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
       </section>
 

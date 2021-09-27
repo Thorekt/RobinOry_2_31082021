@@ -31,7 +31,7 @@ body {
 header {
   margin-top: 0em;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   width: 93%;
   margin-right: auto;
   margin-left: auto;
@@ -40,9 +40,14 @@ header {
 }
 
 #logo {
-  align-items: baseline;
+  flex-grow: 1;  
+  margin-top: 3.225em;
+}
+
+#logo img{
   width: 10em;
 }
+
 
 header nav {
   font-size: 1.5em;
@@ -506,7 +511,6 @@ footer a {
   }
   header nav {
     margin-top:0;
-    flex-flow: row wrap-reverse;
   }  
   header nav ul {
 
