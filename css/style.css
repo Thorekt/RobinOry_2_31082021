@@ -31,6 +31,7 @@ body {
 header {
   margin-top: 0em;
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   width: 93%;
   margin-right: auto;
@@ -58,6 +59,7 @@ header nav {
 header nav ul {
   list-style-type: none;
   display: flex;
+  flex-direction: row;
 }
 header nav li {
   margin-left: 4.6em;
@@ -502,21 +504,37 @@ footer a {
 }
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   header {
     width: 100%;
     margin-bottom: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }  
   #logo {
+    margin: 0;
+    order: 0;
+    flex-grow: 0;
   }
+  #logo img{
+
+  }
+  
+  #primary_nav{
+    order: 2;
+  }
+
+  #signin_nav{
+    order: 1;
+  }
+
   header nav {
     margin-top:0;
   }  
   header nav ul {
 
   }
-  header nav li {
-    align-self: flex-end;    
+  header nav li { 
     margin-left: 0;    
   }
   header nav a {
