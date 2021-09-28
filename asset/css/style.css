@@ -78,7 +78,7 @@ img {
   max-width: 100%;
 }
 
-#sign-in {
+.sign-in {
   color: var(--blue-color);
   margin-right: 2em;
 }
@@ -187,7 +187,7 @@ img {
   font-size: 1.6em;
 }
 
-#mobile-button {
+.mobile-button {
   display: none;
 }
 
@@ -555,20 +555,20 @@ footer a {
     border-top: none;
     border-bottom: var(--blue-color) solid;
   }
-  #sign-in {
+  .sign-in {
     align-self: flex-start;
   }
   #bloc-body {
     width: 100vw;;
   }
-  #desktop-button {
+  .desktop-button {
     display: none;
   }
-  #mobile-button {
+  .mobile-button {
     display: block;
     border-radius: 1.5em;
   }
-  #mobile-button i{
+  .mobile-button i{
     background-color: var(--blue-color);
     color: white;
     margin: 0;
