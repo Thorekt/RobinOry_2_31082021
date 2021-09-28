@@ -181,10 +181,10 @@ img {
   border-top-right-radius: 1.5em;
   border-bottom-right-radius: 1.5em;
 }
-.search button div{
+.search button p{
   font-family: "raleway", "raleway-italic";
   font-weight: bolder;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 .mobile-button {
