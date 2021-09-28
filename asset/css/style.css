@@ -184,7 +184,9 @@ img {
 .search button p{
   font-family: "raleway", "raleway-italic";
   font-weight: bolder;
-  font-size: 2em;
+  font-size: 1.6em;
+  padding: 0;
+  margin: 0;
 }
 
 .mobile-button {
