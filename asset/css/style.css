@@ -78,7 +78,7 @@ img {
   max-width: 100%;
 }
 
-#signin {
+#sign-in {
   color: var(--blue-color);
   margin-right: 2em;
 }
@@ -528,7 +528,7 @@ footer a {
     order: 2;
   }
 
-  #signin-nav {
+  #sign-in-nav {
     order: 1;
   }
 
@@ -555,7 +555,7 @@ footer a {
     border-top: none;
     border-bottom: var(--blue-color) solid;
   }
-  #signin {
+  #sign-in {
     align-self: flex-start;
   }
   #bloc-body {
