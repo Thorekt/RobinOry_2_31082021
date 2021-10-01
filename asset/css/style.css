@@ -557,6 +557,7 @@ footer a {
   #primary-nav a {
     min-width: 50%;
     max-width: 50%;
+    padding: 0;
   }
 
   header nav ul {
@@ -586,6 +587,7 @@ footer a {
   }
   .sign-in {
     align-self: flex-start;
+    margin: 0;
   }
   #bloc-body {
     width: 100vw;
