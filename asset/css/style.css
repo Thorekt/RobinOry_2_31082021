@@ -12,17 +12,11 @@
 
 body {
   font-family: "raleway", "raleway-italic";
-  margin: 0%;
   --grey-color: #f2f2f2;
   --blue-color: #0065fc;
   --light-blue-color: #deebff;
-  padding-top: 0em;
-}
-
-#bloc-page {
-  padding: 0em;
-  margin-top: 0em;
-  width: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -62,7 +56,7 @@ header nav ul {
   padding: 0;
 }
 header nav a {
-  padding-top: 2.9em;;
+  padding-top: 2.9em;
   margin-left: 2.5em;
   padding-right: 1em;
   padding-left: 1em;
@@ -71,7 +65,7 @@ header nav a {
   color: black;
   text-decoration: none;
 }
-header nav a:hover,
+#primary-nav a:hover,
 .selected {
   color: var(--blue-color);
   border-top: var(--blue-color) solid;
@@ -98,14 +92,14 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 0%;
+  margin-top: 0;
   margin-bottom: 0.9em;
 }
 
 .section-title h2 {
   font-weight: bold;
   font-size: 2.3em;
-  margin-top: 0%;
+  margin-top: 0;
 }
 
 .section-title i {
@@ -130,6 +124,7 @@ img {
   font-size: 2.23em;
   font-weight: bolder;
   margin-top: 0.5em;
+  word-wrap: normal;
 }
 
 #bloc-research h2 {
@@ -211,6 +206,7 @@ img {
   margin-top: 0.7em;
   margin-left: 0.5em;
   margin-right: 0.5em;
+  display: flex;
 }
 #list-filters {
   display: flex;
@@ -242,6 +238,7 @@ img {
 }
 
 #search-information {
+  display: flex;
 }
 #search-information i {
   border-radius: 2em;
@@ -491,7 +488,7 @@ footer {
 .footer-content {
   margin-right: 3.5%;
   margin-left: 3.5%;
-  margin-top: auto;
+  margin-top: 0;
   display: flex;
 }
 
@@ -515,9 +512,25 @@ footer a {
 }
 
 @media screen and (max-width: 1200px) {
-  header {
+  header,
+  #bloc-body
+   {
     width: 100vw;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+  }
+  #bloc-research,
+  #bloc-popular,
+  #bloc-accommodations,
+  #bloc-activity,
+  footer {
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 100vw;
+  }
+  header {
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -534,7 +547,8 @@ footer a {
 
   #primary-nav {
     order: 2;
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     padding-top: 1em;
   }
 
@@ -542,6 +556,7 @@ footer a {
     order: 1;
     margin-left: 0em;
     margin-top: 1.2em;
+    margin-right: 1em;
   }
 
   header nav {
@@ -550,8 +565,6 @@ footer a {
   }
 
   #primary-nav ul {
-    min-width: 100%;
-    max-width: 100%;
     padding: 0;
   }
   #primary-nav a {
@@ -572,7 +585,7 @@ footer a {
     padding-bottom: 0.5em;
   }
 
-  #primary-nav a li{
+  #primary-nav a li {
     text-align: center;
   }
 
@@ -588,17 +601,47 @@ footer a {
   .sign-in {
     align-self: flex-start;
     margin: 0;
-    padding-left: 0;
+    padding: 0;
   }
   #bloc-body {
-    width: 100vw;
   }
+
+  #bloc-research {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  #bloc-research h1 {
+    font-size: 1.5em;
+  }
+  #bloc-research h2 {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  .search {
+    font-size: 1.2em;
+  }
+  .search i {
+  }
+  .search input {
+    padding-left: 0.5em;
+  }
+  .search ::placeholder {
+    font-size: 1.6em;
+  }
+  .search button {
+    border-radius: 1.5em;
+    margin-left: -1em;
+  }
+  .search button i {
+    font-size: 1.2em;
+  }
+
   .desktop-button {
     display: none;
   }
   .mobile-button {
+    margin-left: 0;
     display: block;
-    border-radius: 1.5em;
   }
   .mobile-button i {
     background-color: var(--blue-color);
@@ -610,15 +653,75 @@ footer a {
     font-size: 1.5em;
   }
 
-  #bloc-research,
-  #bloc-popular,
-  #bloc-accommodations,
-  #bloc-activity {
-    min-width: 100vw;
-    max-width: 100vw;
-    margin: 0;
-    padding: 0;
+  #bloc-filters {
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 0.5em;
   }
+  #bloc-filters label {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+  }
+  #list-filters {
+  }
+  .filter {
+    font-size: 0.6em;
+    margin-left: 0;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+  .filter span {
+    padding-left: 2.7em;
+    padding-right: 1em;
+  }
+
+  .filter i {
+  }
+
+  #search-information {
+    align-items: flex-start;
+  }
+  #search-information i {
+    font-size: 0.8em;
+    padding: 0.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+  }
+  #search-information span {
+    padding-top: 0.3em;
+    font-size: 1em;
+  }
+  .section-title {
+    padding-top: 2em;
+  }
+  .section-title h2 {
+    font-size: 1.35em;
+  }
+  .section-title i {
+    font-size: 1.35em;
+  }
+
+  .popular .description {
+    margin-left: 1em;
+  }  
+  .accommodation .description {
+    margin-bottom: 0.5em;
+  }
+  .description h3 {
+    font-size: 1em;
+  }
+  .description span {
+    font-size: 0.8em;
+  }
+
+  .description .star-score {
+    font-size: 0.7em;
+  }
+  .accommodation .description .star-score {
+  }
+  .popular .description .star-score {
+  }
+
   #bloc-accommodations-popular {
     flex-direction: column-reverse;
     margin: 0;
@@ -627,6 +730,7 @@ footer a {
   #bloc-accommodations,
   #bloc-popular {
     border-radius: 0;
+    padding-bottom: 2em;
   }
   #bloc-accommodations {
     background-color: white;
@@ -635,26 +739,77 @@ footer a {
   .popular,
   .activity {
     margin: 0;
-    min-width: 85vw;
-    max-width: 90vw;
-    max-height: 19em;
+    min-width: 96%;
+    max-width: 100%;
+  }
+
+  #list-accommodation .bloc,
+  #list-popular .bloc,
+  #list-activity .bloc {
+    padding: 0.3em;
+    margin-bottom: 1em;
+  }
+  .popular {
+    max-height: 8em;
+    min-height: 8em;    
+    margin-bottom: 1em;
+  }
+  .accommodation,
+  .activity {
+    max-height: 13em;
+    min-height: 13em;
+  }
+
+  #show-more {
+    margin-top: 1em;
+    font-size: 1em;
+  }
+
+  #bloc-activity {
+    margin-bottom: 2em;
   }
   #list-activity {
     flex-direction: column;
     max-height: none;
   }
+  .activity h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+  .activity .img-activity {
+    min-height: 90%;
+    max-height: 90%;
+    margin-bottom: 1em;
+  }
   .column {
     max-width: none;
   }
-  .footer-content {
-    flex-direction: column;
+
+  footer {
+    padding-top: 2em;
+
   }
 
-  #bloc-research,
-  #bloc-popular,
-  #bloc-accommodations,
-  #bloc-activity,
-  footer {
-    display: none;
+  .footer-content {
+    max-width: 100%;
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  footer div {
+    width: 100%;    
+    margin-bottom: 2em;
+    margin-top: 0;
+  }
+
+  footer h4 {
+    font-size: 1.1em;
+    margin-top: 0;
+  }
+
+  footer a {
+    font-size: 1em;
+    margin-bottom: 0.75em;
   }
 }
