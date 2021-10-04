@@ -735,14 +735,13 @@ footer a {
   #bloc-accommodations {
     background-color: white;
   }
-  .popular{
-    margin: 0;
-  }
+  .popular,
   .accommodation,  
   .activity {
     margin: 0;
-    min-width: 98%;
-    max-width: 98%;
+  }
+  .accommodation{
+    max-width: 100%;
   }
 
   #list-accommodation .bloc,
