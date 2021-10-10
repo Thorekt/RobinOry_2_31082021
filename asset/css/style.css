@@ -320,6 +320,7 @@ img {
   font-size: 1.67em;
   font-weight: bold;
 }
+
 .description span {
   margin: 0em;
   font-size: 1.4em;
@@ -356,6 +357,7 @@ i {
   flex-direction: column;
   min-width: 29%;
   max-width: 29.5%;
+  min-height: 19em;
   max-height: 19em;
 }
 
@@ -365,6 +367,7 @@ i {
 
 .img-accommodation {
   max-height: 60%;
+  min-height: 60%;
   border-top-left-radius: 1.7em;
   border-top-right-radius: 1.7em;
 }
@@ -466,6 +469,7 @@ i {
 }
 
 .medium {
+  min-height: 43.5%;
   max-height: 43.5%;
 }
 .medium .img-activity {
@@ -511,7 +515,26 @@ footer a {
   margin-bottom: 0.95em;
 }
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 2050px) {
+  .accommodation{
+    min-height: 22em;
+    max-height: 22em;
+  }
+  .description h3 {
+    font-size: 1.45em;
+  }
+  .description span {
+    font-size: 1em;
+  }
+  .img-activity{
+    margin-bottom: 1.4em;
+  }
+  .activity h3 {
+    font-size: 1.45em;
+  }
+}
+@media screen and (max-width: 1300px) {
   header,
   #bloc-body
    {
@@ -741,6 +764,7 @@ footer a {
     margin: 0;
   }
   .accommodation{
+    width: 100%;
     max-width: 100%;
   }
 
