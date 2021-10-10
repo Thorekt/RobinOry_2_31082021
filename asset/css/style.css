@@ -515,9 +515,8 @@ footer a {
   margin-bottom: 0.95em;
 }
 
-
 @media screen and (max-width: 2050px) {
-  .accommodation{
+  .accommodation {
     min-height: 22em;
     max-height: 22em;
   }
@@ -527,7 +526,7 @@ footer a {
   .description span {
     font-size: 1em;
   }
-  .img-activity{
+  .img-activity {
     margin-bottom: 1.4em;
   }
   .activity h3 {
@@ -536,8 +535,7 @@ footer a {
 }
 @media screen and (max-width: 1300px) {
   header,
-  #bloc-body
-   {
+  #bloc-body {
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -564,8 +562,6 @@ footer a {
     flex-grow: 0;
     margin-left: 1em;
     margin-top: 0.7em;
-  }
-  #logo img {
   }
 
   #primary-nav {
@@ -626,9 +622,6 @@ footer a {
     margin: 0;
     padding: 0;
   }
-  #bloc-body {
-  }
-
   #bloc-research {
     margin-top: 1em;
     margin-bottom: 2em;
@@ -643,8 +636,6 @@ footer a {
   .search {
     font-size: 1.2em;
   }
-  .search i {
-  }
   .search input {
     padding-left: 0.5em;
   }
@@ -658,7 +649,6 @@ footer a {
   .search button i {
     font-size: 1.2em;
   }
-
   .desktop-button {
     display: none;
   }
@@ -685,8 +675,7 @@ footer a {
     font-size: 0.8em;
     margin-bottom: 1em;
   }
-  #list-filters {
-  }
+
   .filter {
     font-size: 0.6em;
     margin-left: 0;
@@ -696,9 +685,6 @@ footer a {
   .filter span {
     padding-left: 2.7em;
     padding-right: 1em;
-  }
-
-  .filter i {
   }
 
   #search-information {
@@ -726,7 +712,7 @@ footer a {
 
   .popular .description {
     margin-left: 1em;
-  }  
+  }
   .accommodation .description {
     margin-bottom: 0.5em;
   }
@@ -739,10 +725,6 @@ footer a {
 
   .description .star-score {
     font-size: 0.7em;
-  }
-  .accommodation .description .star-score {
-  }
-  .popular .description .star-score {
   }
 
   #bloc-accommodations-popular {
@@ -759,11 +741,11 @@ footer a {
     background-color: white;
   }
   .popular,
-  .accommodation,  
+  .accommodation,
   .activity {
     margin: 0;
   }
-  .accommodation{
+  .accommodation {
     width: 100%;
     max-width: 100%;
   }
@@ -776,7 +758,7 @@ footer a {
   }
   .popular {
     max-height: 8em;
-    min-height: 8em;    
+    min-height: 8em;
     margin-bottom: 1em;
   }
   .accommodation,
@@ -812,7 +794,6 @@ footer a {
 
   footer {
     padding-top: 2em;
-
   }
 
   .footer-content {
@@ -823,7 +804,7 @@ footer a {
   }
 
   footer div {
-    width: 100%;    
+    width: 100%;
     margin-bottom: 2em;
     margin-top: 0;
   }
