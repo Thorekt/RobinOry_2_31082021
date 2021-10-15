@@ -55,7 +55,7 @@ header nav ul {
   margin: 0;
   padding: 0;
 }
-header nav a {
+header nav li {
   padding-top: 2.9em;
   margin-left: 2.5em;
   padding-right: 1em;
@@ -65,10 +65,17 @@ header nav a {
   color: black;
   text-decoration: none;
 }
-#primary-nav a:hover,
+#primary-nav li:hover,
 .selected {
   color: var(--blue-color);
   border-top: var(--blue-color) solid;
+}
+#primary-nav li:hover a,
+.selected a{
+  color: var(--blue-color);
+}
+#primary-nav li a{
+  display: block;
 }
 
 img {
@@ -586,7 +593,7 @@ footer a {
   #primary-nav ul {
     padding: 0;
   }
-  #primary-nav a {
+  #primary-nav li {
     min-width: 50%;
     max-width: 50%;
     padding: 0;
@@ -599,20 +606,20 @@ footer a {
     margin-left: 0;
   }
 
-  #primary-nav a {
+  #primary-nav li {
     border-bottom: var(--grey-color) solid;
     padding-bottom: 0.5em;
   }
 
-  #primary-nav a li {
+  #primary-nav li a {
     text-align: center;
   }
 
-  header nav a {
+  header nav li {
     padding-top: 0;
     margin: 0;
   }
-  #primary-nav a:hover,
+  #primary-nav li:hover,
   #primary-nav .selected {
     border-top: none;
     border-bottom: var(--blue-color) solid;
