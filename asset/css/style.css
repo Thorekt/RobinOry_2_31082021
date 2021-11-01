@@ -71,10 +71,10 @@ header nav a {
   border-top: var(--blue-color) solid;
 }
 #primary-nav li:hover a,
-.selected a{
+.selected a {
   color: var(--blue-color);
 }
-#primary-nav li a{
+#primary-nav li a {
   display: block;
 }
 
